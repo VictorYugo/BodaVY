@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boda de Víctor & Yessica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="musicBtn" class="music-btn">♫ Música</button>
+  <audio id="music" loop>
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Nos casamos</p>
+      <h1>Víctor & Yessica</h1>
+      <p class="date">15 · 11 · 2026</p>
+      <a href="#rsvp" class="btn">Confirmar asistencia</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <p class="script">Con la bendición de Dios y nuestras familias</p>
+      <h2>Te invitamos a celebrar nuestro amor</h2>
+      <p>Será una noche elegante, emotiva y llena de momentos inolvidables. Tu presencia hará que este día sea aún más especial.</p>
+    </section>
+
+    <section class="countdown reveal">
+      <h2>Faltan</h2>
+      <div class="timer">
+        <div><span id="days">00</span><small>Días</small></div>
+        <div><span id="hours">00</span><small>Horas</small></div>
+        <div><span id="minutes">00</span><small>Min</small></div>
+        <div><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <section class="details reveal">
+      <div class="card">
+        <h3>Ceremonia</h3>
+        <p>Parroquia Nuestra Señora del Amor</p>
+        <p>5:00 p. m.</p>
+      </div>
+      <div class="card">
+        <h3>Recepción</h3>
+        <p>Salón Garden Palace</p>
+        <p>7:00 p. m.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Ubicación</h2>
+      <p>Reemplaza este mapa con el enlace real de Google Maps.</p>
+      <a class="btn secondary" target="_blank" href="https://maps.google.com">Ver en Google Maps</a>
+    </section>
+
+    <section class="gallery reveal">
+      <h2>Nuestra historia</h2>
+      <div class="photos">
+        <img src="assets/foto1.jpg" alt="Foto de la pareja 1">
+        <img src="assets/foto2.jpg" alt="Foto de la pareja 2">
+        <img src="assets/foto3.jpg" alt="Foto de la pareja 3">
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp reveal">
+      <h2>Confirma tu asistencia</h2>
+      <form action="https://formspree.io/f/REEMPLAZA_AQUI" method="POST">
+        <input name="nombre" placeholder="Nombre completo" required>
+        <select name="asistencia" required>
+          <option value="">¿Asistirás?</option>
+          <option>Sí, asistiré</option>
+          <option>No podré asistir</option>
+        </select>
+        <input name="invitados" type="number" min="1" max="5" placeholder="Número de personas">
+        <textarea name="mensaje" placeholder="Mensaje para los novios"></textarea>
+        <button class="btn" type="submit">Enviar confirmación</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Víctor & Yessica</p>
+    <small>Gracias por acompañarnos en este día tan especial</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
