@@ -25,25 +25,32 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Musica
 const music = document.getElementById("music");
-const btn = document.getElementById("musicBtn");
+const playBtn = document.getElementById("playBtn");
+const playIcon = playBtn.querySelector(".play-icon");
 
 let processingMusic = false;
 
-btn.addEventListener("click", async () => {
+playBtn.addEventListener("click", async () => {
   if (processingMusic) {
     return;
   }
 
   processingMusic = true;
-  btn.disabled = true;
+  playBtn.disabled = true;
 
   try {
     if (music.paused) {
       await music.play();
-      btn.textContent = "❚❚ Pausar";
+      playIcon.textContent = "❚❚";
+      playBtn.setAttribute("aria-label", "Pausar");
+      playBtn.setAttribute("aria-pressed", "true");
+      playBtn.classList.add("playing");
     } else {
       music.pause();
-      btn.textContent = "♫ Música";
+      playIcon.textContent = "▶";
+      playBtn.setAttribute("aria-label", "Reproducir");
+      playBtn.setAttribute("aria-pressed", "false");
+      playBtn.classList.remove("playing");
     }
   } catch (error) {
     console.error("Error al reproducir:", error);
@@ -54,7 +61,7 @@ btn.addEventListener("click", async () => {
     alert("No fue posible reproducir la música.");
   } finally {
     processingMusic = false;
-    btn.disabled = false;
+    playBtn.disabled = false;
   }
 });
 
