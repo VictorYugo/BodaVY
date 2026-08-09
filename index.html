@@ -6,7 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Boda de Víctor &amp; Yessica</title>
+  <title>Boda de Víctor Y Yessica</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +20,8 @@
 
 <body>
 
-  <button id="musicBtn" class="music-btn" type="button">
-    ♫ Música
-  </button>
-
   <audio id="music" loop preload="auto">
-    <source src="assets/perfect-piano.mp3" type="audio/mpeg">
+    <source src="assets/Marry_you_bruno_mars_violin.mpeg" type="audio/mpeg">
     Tu navegador no permite reproducir audio.
   </audio>
 
@@ -33,24 +29,56 @@
     <div class="overlay"></div>
 
     <div class="hero-content reveal visible">
-      <p class="eyebrow">Nos casamos</p>
+      <p class="eyebrow">Nuestra boda</p>
 
-      <h1>Víctor &amp; Yessica</h1>
+      <h1>Víctor Y Yessica</h1>
 
       <p class="date">08 · 10 · 2026</p>
 
-      <a href="#rsvp" class="btn">
-        Confirmar asistencia
-      </a>
+      <div class="music-card reveal visible">
+        <p class="music-title">Dale play a nuestra melodía</p>
+
+        <div class="music-progress" aria-hidden="true">
+          <span class="progress-line"></span>
+          <span class="progress-thumb"></span>
+        </div>
+
+        <div class="music-controls" aria-label="Controles de reproducción">
+          <button type="button" class="control-btn" aria-label="Anterior">⏮</button>
+          <button type="button" id="playBtn" class="control-btn play-btn" aria-label="Reproducir" aria-pressed="false">
+            <span class="play-icon">▶</span>
+          </button>
+          <button type="button" class="control-btn" aria-label="Siguiente">⏭</button>
+        </div>
+
+      </div>
     </div>
   </header>
 
   <main>
 
     <section class="section reveal visible">
+
+      <p class="history">Nuestra historia continúa... por ello uniremos
+        nuestras vidas y queremos que seas parte de la celebración de nuestro matrimonio civil
+      </p>
+
+      <img src="assets/foto4.png" alt="Víctor y Yessica, fotografía 4">
+
       <p class="script">
         Con la bendición de Dios y nuestras familias
       </p>
+
+      <p class="script">Padres del Novio</p>
+      <p class="persona">Victor Sifuentes Huaylla</p>
+      <p class="persona">Esmelda Ñiquin Ibañez</p>
+      <p class="script"> Padres de la Novia </p>
+      <p class="persona">Manuel Rubio Gonzales</p>
+      <p class="persona">Rosa Polo Gonzales</p>
+
+      <p class="script">Nuestros testigos:</p>
+      <h2 class="persona">Jimy Cernaque Ballesteros</h2>
+      <h2 class="persona">Marly Diestra Loyola</h2>
 
       <h2>Te invitamos a celebrar nuestro amor</h2>
 
@@ -60,9 +88,24 @@
         Será una noche elegante, emotiva y llena de momentos
         inolvidables. Tu presencia hará que este día sea aún más especial.
       </p>
+
+      <img src="assets/foto5.png" alt="Víctor y Yessica, fotografía 5">
+
     </section>
 
     <section class="countdown reveal visible">
+
+      <div class="date-display">
+        <span class="date-month">Octubre</span>
+        <div class="date-grid">
+          <span class="date-side left">Jueves</span>
+          <span class="date-day">08</span>
+          <span class="date-side right">2026</span>
+        </div>
+      </div>
+
+      <br><br><br><br>
+
       <h2>Faltan</h2>
 
       <div class="timer">
@@ -91,25 +134,19 @@
     <section class="details reveal visible">
 
       <div class="card">
-        <h3>Ceremonia</h3>
-        <p>Parroquia Nuestra Señora del Amor</p>
-        <p>5:00 p. m.</p>
-      </div>
-
-      <div class="card">
-        <h3>Recepción</h3>
-        <p>Salón Garden Palace</p>
-        <p>7:00 p. m.</p>
+        <h3>Ceremonia y Recepción</h3>
+        <p>C.P. Catuay Alto</p>
+        <p>Club Sport "El Torero"</p>
+        <p>4:00 p.m.</p>
       </div>
 
     </section>
 
     <section class="section reveal visible">
-      <h2>Ubicación</h2>
+      <h2>Ver ubicación</h2>
 
       <p>
-        Reemplaza este enlace por la ubicación real de la ceremonia
-        o recepción.
+        Km. 27 Carretera a Simbal - Catuay Alto, Club Sport "El Torero".
       </p>
 
       <a class="btn secondary" target="_blank" rel="noopener noreferrer"
@@ -119,16 +156,86 @@
     </section>
 
     <section class="gallery reveal visible">
-      <h2>Nuestra historia</h2>
+      <h2>Itinerario de la boda</h2>
 
-      <div class="photos">
-        <img src="assets/foto1.jpg" alt="Víctor y Yessica, fotografía 1">
+      <div class="itinerary-simple">
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-BODA_CIVIL.png" alt="Ceremonia"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Inicia la ceremonia civil</div>
+        </div>
 
-        <img src="assets/foto2.jpg" alt="Víctor y Yessica, fotografía 2">
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-CAMARA.png" alt="Fotos"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Sesión de fotos</div>
+        </div>
 
-        <img src="assets/foto3.jpg" alt="Víctor y Yessica, fotografía 3">
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-VINO.png" alt="Brindis"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Brindis familiar</div>
+        </div>
+
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-COMIDA.png" alt="Banquete"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Banquete</div>
+        </div>
+
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-BAILE.png" alt="Baile"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Primer baile de los novios</div>
+        </div>
+
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-SONIDO.png" alt="Fiesta"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Inicia la fiesta, música y diversión</div>
+        </div>
+
+        <div class="row">
+          <div class="left icon"><img src="assets/icons/ICON-RAMO.png" alt="Ramo"></div>
+          <div class="center"><span class="dot"></span></div>
+          <div class="right text">Lanzamiento del ramo</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section reveal visible">
+      <img src="assets/foto6.png" alt="Víctor y Yessica, fotografía 6">
+    </section>
+
+    <section class="vestimenta">
+      <h2>Código de vestimenta</h2>
+      <h2>Semi formal</h2>
+      <p>Queremos que disfruten y se sientan cómodos,
+        por eso les pedimos amablemente elegir colores que no sean
+        blanco o tonos muy claros.</p>
+
+    </section>
+
+    <section class="contact-whatsapp reveal visible">
+      <h2>Confirmar asistencia</h2>
+      <p>Si tienes alguna duda, escríbenos por WhatsApp con un mensaje bonito.</p>
+
+      <div class="whatsapp-buttons">
+        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=+51925857727&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
+          Contacto novia
+        </a>
+        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=+51916434562&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
+          Contacto novio
+        </a>
       </div>
     </section>
+
+    <a href="#rsvp" class="btn">
+      Confirmar asistencia
+    </a>
 
     <section id="rsvp" class="rsvp reveal visible">
       <h2>Confirma tu asistencia</h2>
