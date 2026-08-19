@@ -103,7 +103,7 @@ const cuposValidos =
 if (nombreParam) {
   if (saludoInvitado) {
     saludoInvitado.textContent =
-      `¡Hola ${nombreParam}! Nos hace mucha ilusión compartir este día contigo.`;
+      `${nombreParam} Nos hace mucha ilusión compartir este día contigo.`;
   }
 
   nombreInvitado.value = nombreParam;
