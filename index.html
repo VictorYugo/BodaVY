@@ -21,7 +21,7 @@
 <body>
 
   <audio id="music" loop preload="auto">
-    <source src="assets/Marry_you_bruno_mars_violin.mpeg" type="audio/mpeg">
+    <source src="assets/Marry_you_bruno_mars_violin_2.mp3" type="audio/mpeg">
     Tu navegador no permite reproducir audio.
   </audio>
 
@@ -37,36 +37,38 @@
       </h1>
 
       <p class="date">08 · 10 · 2026</p>
-
-      <div class="music-card reveal visible">
-        <p class="music-title">Dale play a nuestra melodía</p>
-
-        <div class="music-progress" aria-hidden="true">
-          <span class="progress-line"></span>
-          <span class="progress-thumb"></span>
-        </div>
-
-        <div class="music-controls" aria-label="Controles de reproducción">
-          <button type="button" class="control-btn" aria-label="Anterior">⏮</button>
-          <button type="button" id="playBtn" class="control-btn play-btn" aria-label="Reproducir" aria-pressed="false">
-            <span class="play-icon">▶</span>
-          </button>
-          <button type="button" class="control-btn" aria-label="Siguiente">⏭</button>
-        </div>
-
-      </div>
     </div>
   </header>
 
   <main>
 
-    <section class="section reveal visible">
+    <section class="music-section">
+      <p class="music-title">Dale play a nuestra melodía</p>
+
+      <div class="music-progress" aria-hidden="true">
+        <span class="progress-line"></span>
+        <span class="progress-thumb"></span>
+      </div>
+
+      <div class="music-controls" aria-label="Controles de reproducción">
+        <button type="button" class="control-btn" aria-label="Anterior">⏮</button>
+        <button type="button" id="playBtn" class="control-btn play-btn" aria-label="Reproducir" aria-pressed="false">
+          <span class="play-icon">▶</span>
+        </button>
+        <button type="button" class="control-btn" aria-label="Siguiente">⏭</button>
+      </div>
+    </section>
+
+    <section class="section">
 
       <p class="history">Nuestra historia continúa... por ello uniremos
         nuestras vidas y queremos que seas parte de la celebración de nuestro matrimonio civil
       </p>
 
       <img src="assets/foto4.png" alt="Víctor y Yessica, fotografía 4">
+    </section>
+
+    <section class="section">
 
       <p class="script">
         Con la bendición de Dios y nuestros padres
@@ -80,27 +82,25 @@
       <p class="persona">Rosa Polo Gonzales</p>
 
       <p class="script">Nuestros testigos:</p>
-      <h2 class="persona">Jimy Cernaque Ballesteros</h2>
-      <h2 class="persona">Marly Diestra Loyola</h2>
+      <p class="persona">Jimy Cernaque Ballesteros</p>
+      <p class="persona">Marly Diestra Loyola</p>
+    </section>
 
-      <br><br><br><br>
-      <div class="card">
-        <h2>Te invitamos a celebrar nuestro amor</h2>
-      </div>
+    <section class="section">
+      <h2>Te invitamos a celebrar nuestro amor</h2>
 
       <div>
-        <p id="saludoInvitado" class="guest-greeting"></p>
-        <p>
+        <p id="saludoInvitado" class="guest-greeting">
           Será una noche elegante, emotiva y llena de momentos
           inolvidables. Tu presencia hará que este día sea aún más especial.
         </p>
       </div>
 
-      <img src="assets/foto5.png" alt="Víctor y Yessica, fotografía 5">
+      <img src="assets/IMG-OCASO.png" alt="Víctor y Yessica">
 
     </section>
 
-    <section class="countdown reveal visible">
+    <section class="countdown">
 
       <div class="date-display">
         <span class="date-month">Octubre</span>
@@ -138,18 +138,14 @@
       </div>
     </section>
 
-    <section class="details reveal visible">
-
-      <div class="card">
-        <h3>Ceremonia y Recepción</h3>
-        <p>C.P. Catuay Alto</p>
-        <p>Club Sport "El Torero"</p>
-        <p>4:00 p.m.</p>
-      </div>
-
+    <section class="details">
+      <h2>Ceremonia y Recepción</h2>
+      <p>C.P. Catuay Alto</p>
+      <p>Club Sport "El Torero"</p>
+      <p>4:00 p.m.</p>
     </section>
 
-    <section class="section reveal visible">
+    <section class="section">
       <h2>Ver ubicación</h2>
 
       <p>
@@ -162,60 +158,15 @@
       </a>
     </section>
 
-    <section class="gallery reveal visible">
+    <section class="gallery">
       <h2>Itinerario de la boda</h2>
 
-      <div class="itinerary-simple">
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-BODA_CIVIL.png" alt="Ceremonia"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Ceremonia civil</div>
-        </div>
+<img src="assets/itinerario.jpg" alt="Itinerario de la boda">
 
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-CAMARA.png" alt="Fotos"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Sesión de fotos</div>
-        </div>
-
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-VINO.png" alt="Brindis"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Brindis familiar</div>
-        </div>
-
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-COMIDA.png" alt="Banquete"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Banquete</div>
-        </div>
-
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-BAILE.png" alt="Baile"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Primer baile de los novios</div>
-        </div>
-
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-SONIDO.png" alt="Fiesta"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Inicia la fiesta, música y diversión</div>
-        </div>
-
-        <div class="row">
-          <div class="left icon"><img src="assets/icons/ICON-RAMO.png" alt="Ramo"></div>
-          <div class="center"><span class="dot"></span></div>
-          <div class="right text">Lanzamiento del ramo</div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="section reveal visible">
-      <img src="assets/foto6.png" alt="Víctor y Yessica, fotografía 6">
     </section>
 
     <section class="vestimenta">
+      <img src="assets/img_vestimenta.jpg" alt="Vestimenta recomendada para la boda">
       <h2>Código de vestimenta</h2>
       <h3>Semi formal</h3>
       <p>Queremos que disfruten y se sientan cómodos,
@@ -224,7 +175,7 @@
 
     </section>
 
-    <section class="contact-whatsapp reveal visible">
+    <section class="contact-whatsapp">
       <h2>Contáctanos</h2>
       <p>Si tienes alguna duda, escríbenos por WhatsApp con un mensaje bonito.</p>
 
@@ -240,11 +191,7 @@
       </div>
     </section>
 
-    <a href="#rsvp" class="btn">
-      Confirmar asistencia
-    </a>
-
-    <section id="rsvp" class="rsvp reveal visible">
+    <section id="rsvp" class="rsvp">
       <h2>Confirma tu asistencia</h2>
 
       <p id="mensajeCupos" class="guest-spots"></p>
@@ -277,9 +224,6 @@
       </form>
 
       <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
-    </section>
-
-    <p id="formMessage" class="form-message"></p>
     </section>
 
   </main>
