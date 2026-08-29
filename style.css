@@ -27,19 +27,29 @@ section, .details, .vestimenta, .contact-whatsapp { width: min(100%, 900px); }
 .play-btn { width: 64px; height: 64px; background: var(--gold); color: #1b1512; font-size: 1.35rem; }
 .play-btn.playing { background: var(--olive); color: var(--pearl); }
 .play-icon { display: inline-flex; align-items: center; justify-content: center; }
-.eyebrow { letter-spacing: 6px; font-family: 'Arial', 'Helvetica', sans-serif; text-transform: uppercase; font-size: 13px; color: var(--pearl); }
-.history { color: #ffffff; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; line-height: 1.8; margin-top: 20px; }
+.eyebrow { letter-spacing: 6px; font-family: 'Arial', 'Helvetica', sans-serif; text-transform: uppercase; font-size: 18px; color: var(--pearl); }
+.history { color: #ffffff; font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; line-height: 1.8; margin-top: 20px; }
 h1 { font-family: 'Great Vibes', cursive; font-size: clamp(70px, 15vw, 150px); margin: 10px 0; font-weight: 400; color: var(--pearl); }
 h2 { font-family: 'Great Vibes', cursive; color: var(--gold); font-size: clamp(44px, 8vw, 78px); font-weight: 400; margin: 0 0 20px; }
 h3 { color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
-.date { font-size: 24px; letter-spacing: 8px; color: var(--pearl); }
+.date { font-size: 32px; letter-spacing: 8px; color: var(--pearl); font-weight: 700; }
 .btn { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--gold); background: var(--gold); color: #1b1512; padding: 14px 24px; border-radius: 999px; text-decoration: none; font-weight: 700; margin-top: 20px; cursor: pointer; min-height: 54px; }
 .btn:not(.secondary) { color: #ffffff !important; }
 .secondary { background: transparent; color: var(--olive); border-color: var(--olive); }
 .contact-whatsapp { max-width: 900px; margin: 40px auto 0; padding: 80px 24px; text-align: center; border-radius: 32px; background: rgba(255, 255, 255, 0.95); color: var(--text-dark); border: 1px solid rgba(112, 122, 70, 0.12); box-shadow: 0 24px 50px rgba(0, 0, 0, 0.06); }
 .contact-whatsapp p { max-width: 620px; margin: 0 auto 30px; color: var(--text-dark); opacity: 0.92; }
-.whatsapp-buttons { display: grid; gap: 16px; justify-content: center; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-.whatsapp-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 54px; border-color: var(--olive); background: rgba(194, 205, 184, 0.15); color: #1b1512; }
+.gift-details { margin-top: 18px; }
+.payment-grid { display: grid; grid-template-columns: repeat(2, minmax(200px, 1fr)); gap: 24px; margin-top: 12px; }
+.payment-card { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 20px 16px; border-radius: 24px; background: rgba(194, 205, 184, 0.12); border: 1px solid rgba(112, 122, 70, 0.18); }
+.qr-box { width: 140px; height: 140px; padding: 10px; border-radius: 18px; background: #ffffff; box-shadow: 0 16px 30px rgba(17, 18, 16, 0.08); }
+.qr-box img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.account-info { display: flex; flex-direction: column; align-items: center; }
+.account-info.top { margin-bottom: 4px; }
+.account-info.bottom { gap: 5px; margin-top: 4px; }
+.account-info strong { font-size: 1.05rem; color: var(--text-dark); }
+.account-info span { font-size: 0.95rem; color: var(--text-dark); opacity: 0.85; }
+.whatsapp-buttons { display: grid; gap: 16px; justify-content: center; grid-template-columns: 1fr; width: min(100%, 560px); margin: 20px auto 0; }
+.whatsapp-btn { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 54px; border-color: var(--olive); background: rgba(194, 205, 184, 0.15); color: #1b1512; }
 .whatsapp-btn:hover { background: rgba(194, 205, 184, 0.25); }
 .music-section, .section, .countdown, .gallery, .rsvp, .details, .vestimenta, .contact-whatsapp { width: min(100%, 900px); margin: auto; padding: 80px 24px; text-align: center; border-radius: 32px; background: rgba(255, 255, 255, 0.98); color: var(--text-dark); border: 1px solid var(--olive); box-shadow: 0 24px 50px rgba(0, 0, 0, 0.04); }
 .music-section { padding: 40px 24px; }
@@ -53,15 +63,18 @@ main section.section:first-of-type .script,
 main section.section:first-of-type .guest-greeting {
   color: var(--gold);
 }
-.script { font-family: 'Great Vibes', cursive; font-size: 36px; color: inherit; }
+.script, .history { font-family: 'Great Vibes', cursive !important; font-size: 2.2rem; font-weight: 700; color: inherit; }
+  .script_inv { font-family: 'Great Vibes', cursive !important; font-size: 3.5rem !important; font-weight: 700; }
+.guest-greeting { font-family: 'Great Vibes', cursive !important; font-size: 2.2rem !important; font-weight: 700; }
 .persona { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: #3f3a2f; margin: 6px 0; letter-spacing: 0.02em; text-transform: none; }
 .timer { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-.date-display { display: grid; gap: 12px; margin-bottom: 24px; text-align: center; }
+.date-display { display: grid; gap: 12px; margin-bottom: 24px; text-align: center; font-weight: 700; }
 .date-month { text-transform: uppercase; letter-spacing: 0.45em; font-size: 0.9rem; color: var(--gold); opacity: 0.95; }
 .date-grid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 18px; }
 .date-side { position: relative; text-transform: uppercase; letter-spacing: 0.35em; color: var(--gold); font-size: 0.9rem; opacity: 0.9; }
 .date-side.left::before { content: ""; position: absolute; top: 50%; left: -110%; transform: translateY(-50%); width: 100px; height: 1px; background: currentColor; opacity: 0.4; }
 .date-side.right::after { content: ""; position: absolute; top: 50%; right: -110%; transform: translateY(-50%); width: 100px; height: 1px; background: currentColor; opacity: 0.4; }
+.date-side.right { font-size: 1.1rem; }
 .date-day { font-family: 'Great Vibes', cursive; font-size: clamp(72px, 10vw, 120px); color: var(--gold); letter-spacing: 0.05em; line-height: 1; }
 .timer div, .card { background: transparent; border: 0; border-radius: 0; padding: 24px 10px; }
 .timer span { display: block; font-size: 42px; color: var(--gold); font-weight: 700; }
@@ -77,6 +90,8 @@ main section.section:first-of-type .guest-greeting {
 .contact-whatsapp > img,
 .rsvp > img,
 main > img { display: block; margin: 24px auto; max-width: 100%; height: auto; border-radius: 26px; }
+.location-image { width: 50%; }
+.gift-image { width: 25%; }
 /* Itinerary styles */
 .itinerary { max-width: 900px; margin: 24px auto; }
 .itinerary-grid { display: grid; grid-template-columns: 1fr 80px 1fr; gap: 8px 24px; align-items: start; }
@@ -123,7 +138,11 @@ footer { text-align: center; margin-top: var(--section-gap); padding: 60px 24px;
 footer p { font-family: 'Great Vibes', cursive; color: var(--pearl); font-size: 48px; margin: 0; }
 .reveal { opacity: 0; transform: translateY(28px); transition: 1s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-@media (max-width: 720px) { .timer, .details, .photos { grid-template-columns: 1fr; } .photos img { height: 420px; } .date { font-size: 18px; letter-spacing: 5px; } }
+@media (max-width: 720px) {
+  .timer, .details, .photos, .payment-grid { grid-template-columns: 1fr; }
+  .photos img { height: 420px; }
+  .date { font-size: 24px; letter-spacing: 5px; }
+}
 
 .guest-greeting {
   max-width: 650px;
@@ -144,6 +163,7 @@ footer p { font-family: 'Great Vibes', cursive; color: var(--pearl); font-size: 
   min-height: 24px;
   margin-top: 20px;
   text-align: center;
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
@@ -204,20 +224,24 @@ main > section {
   margin: 0;
 }
 
-.history,
 .persona,
-.guest-greeting,
 .details p,
-.section > p:not(.script),
+.section > p:not(.script):not(.history),
 .secondary,
 .itinerary-simple,
-.vestimenta > p,
-.contact-whatsapp > p,
 .guest-spots,
 #rsvpForm,
 footer small {
   font-family: Woodland, 'Baskerville Old Face', Georgia, serif !important;
   font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.vestimenta > p,
+.contact-whatsapp > p {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 
 .details h2 {

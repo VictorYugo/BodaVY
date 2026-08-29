@@ -30,12 +30,12 @@
 
     <div class="hero-content reveal visible">
       <p class="eyebrow">Nuestra boda</p>
-
+      <br><br>
       <h1>Víctor
         <br>&<br>
         Yessica
       </h1>
-
+      <br><br>
       <p class="date">08 · 10 · 2026</p>
     </div>
   </header>
@@ -61,8 +61,8 @@
 
     <section class="section">
 
-      <p class="history">Nuestra historia continúa... por ello uniremos
-        nuestras vidas y queremos que seas parte de la celebración de nuestro matrimonio civil
+      <p class="history">Nuestra historia suma un nuevo capítulo... Por ello, uniremos
+        nuestras vidas y nos encantaría que nos acompañes a celebrar nuestro matrimonio.
       </p>
 
       <img src="assets/foto4.png" alt="Víctor y Yessica, fotografía 4">
@@ -70,25 +70,26 @@
 
     <section class="section">
 
-      <p class="script">
+      <h2 class="script_inv">
         Con la bendición de Dios y nuestros padres
-      </p>
+      </h2>
 
-      <p class="script">Padres del Novio</p>
+      <p class="script">Padres del Novio:</p>
       <p class="persona">Victor Sifuentes Huaylla</p>
       <p class="persona">Esmelda Ñiquin Ibañez</p>
-      <p class="script"> Padres de la Novia </p>
+      <p class="script"> Padres de la Novia:</p>
       <p class="persona">Manuel Rubio Gonzales</p>
       <p class="persona">Rosa Polo Gonzales</p>
 
       <p class="script">Nuestros testigos:</p>
       <p class="persona">Jimy Cernaque Ballesteros</p>
       <p class="persona">Marly Diestra Loyola</p>
+
+      <br><br>
+      <h2 class="script_inv">Te invitamos a celebrar nuestro amor</h2>
     </section>
 
     <section class="section">
-      <h2>Te invitamos a celebrar nuestro amor</h2>
-
       <div>
         <p id="saludoInvitado" class="guest-greeting">
           Será una noche elegante, emotiva y llena de momentos
@@ -96,7 +97,7 @@
         </p>
       </div>
 
-      <img src="assets/IMG-OCASO.png" alt="Víctor y Yessica">
+      <img src="assets/IMG-ANILLO.png" alt="Pedida de mano">
 
     </section>
 
@@ -146,12 +147,9 @@
     </section>
 
     <section class="section">
-      <h2>Ver ubicación</h2>
-
-      <p>
-        Km. 27 Carretera a Simbal - Catuay Alto, Club Sport "El Torero".
-      </p>
-
+      <h2>Ubicación</h2>
+      <img class="location-image" src="assets/icons/icon-ubicacion.png" alt="Ubicación de la boda">
+      <p>Km. 27 Carretera a Simbal - Catuay Alto, Club Sport "El Torero".</p>
       <a class="btn secondary" target="_blank" rel="noopener noreferrer"
         href="https://maps.app.goo.gl/AtAqSMP6S54uMdY59?g_st=aw">
         Ver en Google Maps
@@ -161,34 +159,26 @@
     <section class="gallery">
       <h2>Itinerario de la boda</h2>
 
-<img src="assets/itinerario.jpg" alt="Itinerario de la boda">
+      <img src="assets/icons/icon-itinerario.png" alt="Itinerario de la boda">
 
     </section>
 
     <section class="vestimenta">
-      <img src="assets/img_vestimenta.jpg" alt="Vestimenta recomendada para la boda">
       <h2>Código de vestimenta</h2>
+      <img src="assets/icons/icon-vestimenta.png" alt="Vestimenta recomendada para la boda">
       <h3>Semi formal</h3>
       <p>Queremos que disfruten y se sientan cómodos,
-        por eso les pedimos amablemente elegir colores que no sean
-        blanco o tonos muy claros.</p>
+        por eso les pedimos amablemente elegir colores que no sea
+        blanco o tonos similares.</p>
 
     </section>
 
     <section class="contact-whatsapp">
-      <h2>Contáctanos</h2>
-      <p>Si tienes alguna duda, escríbenos por WhatsApp con un mensaje bonito.</p>
-
-      <div class="whatsapp-buttons">
-        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
-          href="https://api.whatsapp.com/send?phone=+51925857727&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
-          Contacto novia
-        </a>
-        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
-          href="https://api.whatsapp.com/send?phone=+51916434562&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
-          Contacto novio
-        </a>
-      </div>
+      <h2>Regalos</h2>
+      <img class="gift-image" src="assets/icons/icon_regalo.png" alt="Regalos de boda">
+      <p id="giftIntro" class="gift-intro">El mejor regalo que pueden darnos es su presencia en nuestro día más importante pero,
+        si desean tener un detalle con nosotros, un aporte a nuestro nuevo comienzo será enormemente apreciado.</p>
+      <div id="giftDetails" class="gift-details" aria-live="polite"></div>
     </section>
 
     <section id="rsvp" class="rsvp">
@@ -224,6 +214,18 @@
       </form>
 
       <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+      <div class="whatsapp-buttons">
+        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=+51925857727&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
+          Contacto novia
+        </a>
+        <a class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?phone=+51916434562&text=Hola%20Víctor%20y%20Yessica%2C%20muchas%20felicidades%20en%20su%20gran%20d%C3%ADa.%20Me%20encantar%C3%ADa%20confirmar%20mi%20asistencia%20y%20acompa%C3%B1arlos%20en%20esta%20celebraci%C3%B3n.">
+          Contacto novio
+        </a>
+      </div>
+
     </section>
 
   </main>

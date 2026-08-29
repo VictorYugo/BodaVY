@@ -66,17 +66,17 @@ playBtn.addEventListener("click", async () => {
 });
 
 // ======================================================
-// Invitación personalizada mediante parámetros de URL
+// Invitación personalizada mediante código de URL
 // ======================================================
 
 const urlParams = new URLSearchParams(window.location.search);
-
-const nombreParam = urlParams.get("nombre");
-const cuposParam = urlParams.get("cupos");
-const codigoParam = urlParams.get("id");
+const codigoParam = (urlParams.get("c") || "").trim().toUpperCase();
+let invitado = null;
 
 const saludoInvitado = document.getElementById("saludoInvitado");
 const mensajeCupos = document.getElementById("mensajeCupos");
+const giftIntro = document.getElementById("giftIntro");
+const giftDetails = document.getElementById("giftDetails");
 
 const rsvpForm = document.getElementById("rsvpForm");
 const nombreInvitado = document.getElementById("nombreInvitado");
@@ -89,41 +89,131 @@ const cuposPermitidos = document.getElementById("cuposPermitidos");
 const submitBtn = document.getElementById("submitBtn");
 const formMessage = document.getElementById("formMessage");
 
-// Convierte el parámetro cupos a número.
-// Si no existe o no es válido, se usa 1.
-const maxCupos = Number.parseInt(cuposParam, 10);
-const cuposValidos =
-  Number.isInteger(maxCupos) && maxCupos > 0 ? maxCupos : 1;
+let cuposValidos = 0;
 
 
 // ======================================================
 // Personalización de la invitación
 // ======================================================
 
-if (nombreParam) {
-  if (saludoInvitado) {
-    saludoInvitado.textContent =
-      `${nombreParam} Nos hace mucha ilusión compartir este día contigo.`;
+function renderGiftDetails() {
+  if (!giftIntro || !giftDetails) {
+    return;
   }
 
-  nombreInvitado.value = nombreParam;
+  const defaultGiftText = "El mejor regalo que pueden darnos es su presencia en nuestro día más importante pero, si desean tener un detalle con nosotros, un aporte a nuestro nuevo comienzo será enormemente apreciado.";
+  giftIntro.textContent = defaultGiftText;
 
-  // Evita modificaciones accidentales.
-  nombreInvitado.readOnly = true;
+  const mostrarPagos = invitado && String(invitado.qr || "").trim().toUpperCase() === "X";
+  giftDetails.innerHTML = "";
+
+  if (!mostrarPagos || !Array.isArray(invitado.pagos) || invitado.pagos.length === 0) {
+    return;
+  }
+
+  const items = invitado.pagos.map((pago) => {
+    const qrSrc = pago.qr || (
+      pago.nombre && pago.nombre.toLowerCase().includes("yessica")
+        ? "assets/icons/QR_YYRP.png"
+        : "assets/icons/QR_VHSN.png"
+    );
+    const persona = pago.nombre || "Cuenta del novios";
+    const numeroCuenta = pago.numeroCuenta || "Nro cuenta: 123456789";
+    const cci = pago.cci || "CCI: 987654321";
+    const yape = pago.yape || "Yape: 999888777";
+
+    return `
+      <div class="payment-card">
+        <div class="account-info top">
+          <strong>${persona}</strong>
+        </div>
+        <div class="qr-box">
+          <img src="${qrSrc}" alt="Código QR para ${persona}">
+        </div>
+        <div class="account-info bottom">
+          <span><strong>Nro cuenta:</strong> <strong>${numeroCuenta.replace(/^Nro cuenta:\s*/i, "")}</strong></span>
+          <span><strong>CCI:</strong> <strong>${cci.replace(/^CCI:\s*/i, "")}</strong></span>
+          <span><strong>Yape:</strong> <strong>${yape.replace(/^Yape:\s*/i, "")}</strong></span>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  giftDetails.innerHTML = `<div class="payment-grid">${items}</div>`;
 }
 
-codigoInvitado.value = codigoParam || "SIN-CODIGO";
-cuposPermitidos.value = cuposValidos;
+function mostrarEnlaceInvalido() {
+  if (mensajeCupos) {
+    mensajeCupos.textContent = "Enlace de invitación no válido.";
+  }
 
-numeroInvitados.max = cuposValidos;
-numeroInvitados.value = 1;
+  if (giftIntro) {
+    giftIntro.textContent = "El mejor regalo que pueden darnos es su presencia en nuestro día más importante pero, si desean tener un detalle con nosotros, un aporte a nuestro nuevo comienzo será enormemente apreciado.";
+  }
 
-if (mensajeCupos) {
-  mensajeCupos.textContent =
-    cuposValidos === 1
-      ? "Esta invitación ha sido reservada para 1 persona."
-      : `Esta invitación ha sido reservada para un máximo de ${cuposValidos} personas.`;
+  if (giftDetails) {
+    giftDetails.innerHTML = "";
+  }
+
+  formMessage.textContent = "Verifica el código de tu invitación para confirmar tu asistencia.";
+  formMessage.classList.add("error");
+  rsvpForm.querySelectorAll("input, select, textarea, button").forEach((element) => {
+    element.disabled = true;
+  });
 }
+
+async function cargarInvitado() {
+  try {
+    const response = await fetch("invitados.json", { cache: "no-store" });
+
+    if (!response.ok) {
+      throw new Error(`No se pudo cargar invitados.json (${response.status}).`);
+    }
+
+    const listaInvitados = await response.json();
+    invitado = listaInvitados[codigoParam];
+
+    if (!invitado) {
+      mostrarEnlaceInvalido();
+      return;
+    }
+
+    cuposValidos = Number.isInteger(invitado.cupos) && invitado.cupos > 0
+      ? invitado.cupos
+      : 0;
+
+    if (!cuposValidos) {
+      mostrarEnlaceInvalido();
+      return;
+    }
+
+    if (saludoInvitado) {
+      saludoInvitado.textContent =
+        `${invitado.nombre} Nos hace mucha ilusión compartir este día contigo.`;
+    }
+
+    nombreInvitado.value = invitado.nombre;
+    nombreInvitado.readOnly = true;
+    codigoInvitado.value = codigoParam;
+    cuposPermitidos.value = cuposValidos;
+    numeroInvitados.max = cuposValidos;
+    numeroInvitados.value = 1;
+
+    if (mensajeCupos) {
+      mensajeCupos.textContent =
+        cuposValidos === 1
+          ? "Esta invitación ha sido reservada para 1 persona."
+          : `Esta invitación ha sido reservada para un máximo de ${cuposValidos} personas.`;
+    }
+
+    renderGiftDetails();
+  } catch (error) {
+    console.error("Error al cargar invitados.json:", error);
+    mostrarEnlaceInvalido();
+  }
+}
+
+cargarInvitado();
 
 
 // ======================================================
@@ -161,6 +251,11 @@ actualizarCampoAsistentes();
 function validarFormulario() {
   formMessage.textContent = "";
   formMessage.classList.remove("success", "error");
+
+  if (!invitado) {
+    mostrarMensaje("El enlace de invitación no es válido.", "error");
+    return false;
+  }
 
   if (!nombreInvitado.value.trim()) {
     mostrarMensaje("Ingresa el nombre del invitado.", "error");
