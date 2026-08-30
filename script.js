@@ -65,6 +65,59 @@ playBtn.addEventListener("click", async () => {
   }
 });
 
+async function copiarTexto(texto) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(texto);
+    return;
+  }
+
+  const area = document.createElement("textarea");
+  area.value = texto;
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.appendChild(area);
+  area.focus();
+  area.select();
+  const copiado = document.execCommand("copy");
+  area.remove();
+
+  if (!copiado) {
+    throw new Error("El navegador no permitió copiar el dato.");
+  }
+}
+
+document.querySelectorAll(".copy-btn").forEach((button) => {
+  button.dataset.originalLabel = button.getAttribute("aria-label");
+
+  button.addEventListener("click", async () => {
+    const textoOriginal = button.dataset.copy;
+
+    try {
+      await copiarTexto(textoOriginal);
+      button.querySelector(".copy-text").textContent = "Copiado";
+      button.classList.add("copied");
+      button.setAttribute("aria-label", "Copiado");
+
+      window.setTimeout(() => {
+        button.querySelector(".copy-text").textContent = "Copiar";
+        button.classList.remove("copied");
+        button.setAttribute("aria-label", button.dataset.originalLabel);
+      }, 1600);
+    } catch (error) {
+      console.error("No se pudo copiar el dato:", error);
+      button.querySelector(".copy-text").textContent = "Error";
+      button.classList.add("copied");
+      button.setAttribute("aria-label", "No se pudo copiar");
+
+      window.setTimeout(() => {
+        button.querySelector(".copy-text").textContent = "Copiar";
+        button.classList.remove("copied");
+        button.setAttribute("aria-label", button.dataset.originalLabel);
+      }, 1600);
+    }
+  });
+});
+
 // ======================================================
 // Invitación personalizada mediante código de URL
 // ======================================================
@@ -105,41 +158,7 @@ function renderGiftDetails() {
   giftIntro.textContent = defaultGiftText;
 
   const mostrarPagos = invitado && String(invitado.qr || "").trim().toUpperCase() === "X";
-  giftDetails.innerHTML = "";
-
-  if (!mostrarPagos || !Array.isArray(invitado.pagos) || invitado.pagos.length === 0) {
-    return;
-  }
-
-  const items = invitado.pagos.map((pago) => {
-    const qrSrc = pago.qr || (
-      pago.nombre && pago.nombre.toLowerCase().includes("yessica")
-        ? "assets/icons/QR_YYRP.png"
-        : "assets/icons/QR_VHSN.png"
-    );
-    const persona = pago.nombre || "Cuenta del novios";
-    const numeroCuenta = pago.numeroCuenta || "Nro cuenta: 123456789";
-    const cci = pago.cci || "CCI: 987654321";
-    const yape = pago.yape || "Yape: 999888777";
-
-    return `
-      <div class="payment-card">
-        <div class="account-info top">
-          <strong>${persona}</strong>
-        </div>
-        <div class="qr-box">
-          <img src="${qrSrc}" alt="Código QR para ${persona}">
-        </div>
-        <div class="account-info bottom">
-          <span><strong>Nro cuenta:</strong> <strong>${numeroCuenta.replace(/^Nro cuenta:\s*/i, "")}</strong></span>
-          <span><strong>CCI:</strong> <strong>${cci.replace(/^CCI:\s*/i, "")}</strong></span>
-          <span><strong>Yape:</strong> <strong>${yape.replace(/^Yape:\s*/i, "")}</strong></span>
-        </div>
-      </div>
-    `;
-  }).join("");
-
-  giftDetails.innerHTML = `<div class="payment-grid">${items}</div>`;
+  giftDetails.hidden = !mostrarPagos;
 }
 
 function mostrarEnlaceInvalido() {
@@ -152,7 +171,7 @@ function mostrarEnlaceInvalido() {
   }
 
   if (giftDetails) {
-    giftDetails.innerHTML = "";
+    giftDetails.hidden = true;
   }
 
   formMessage.textContent = "Verifica el código de tu invitación para confirmar tu asistencia.";

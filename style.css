@@ -10,7 +10,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--pearl); color: var(--text-dark); }
+body { min-width: 320px; margin: 0; font-family: 'Montserrat', sans-serif; background: var(--pearl); color: var(--text-dark); }
 main { display: flex; flex-direction: column; align-items: center; gap: var(--section-gap); width: 100%; margin: var(--section-gap) auto 0; }
 section, .details, .vestimenta, .contact-whatsapp { width: min(100%, 900px); }
 .hero { min-height: 100vh; background: linear-gradient(180deg, rgba(194,205,184,0.92), rgba(194,205,184,0.92)), url('assets/portada.jpg') center/cover no-repeat; position: relative; display: grid; place-items: center; text-align: center; padding: 24px; }
@@ -45,9 +45,20 @@ h3 { color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
 .qr-box img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .account-info { display: flex; flex-direction: column; align-items: center; }
 .account-info.top { margin-bottom: 4px; }
-.account-info.bottom { gap: 5px; margin-top: 4px; }
+.account-info.bottom { gap: 8px; margin-top: 4px; width: 100%; }
 .account-info strong { font-size: 1.05rem; color: var(--text-dark); }
 .account-info span { font-size: 0.95rem; color: var(--text-dark); opacity: 0.85; }
+.account-info strong.cci-label { font-family: inherit !important; font-size: 2em !important; font-weight: 100; }
+.payment-row { display: grid; grid-template-columns: minmax(0, 1fr) 78px; align-items: center; gap: 12px; width: 100%; }
+.payment-data { min-width: 0; padding-left: 90px; text-align: left; }
+.copy-btn { width: 28px; height: 28px; border: 0; border-radius: 0; padding: 0; background: transparent; color: var(--gold); font-family: inherit !important; cursor: pointer; }
+.copy-icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; transition: transform 0.2s ease, color 0.2s ease; }
+.copy-text { display: none !important; }
+.copy-btn:hover .copy-icon, .copy-btn:focus-visible .copy-icon { transform: scale(1.12); }
+.copy-btn:hover, .copy-btn:focus-visible { color: var(--gold); }
+.copy-btn.copied .copy-icon { display: none; }
+.copy-btn.copied .copy-text { display: inline !important; }
+.copy-btn.copied { color: #2f7d4a !important; }
 .whatsapp-buttons { display: grid; gap: 16px; justify-content: center; grid-template-columns: 1fr; width: min(100%, 560px); margin: 20px auto 0; }
 .whatsapp-btn { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 54px; border-color: var(--olive); background: rgba(194, 205, 184, 0.15); color: #1b1512; }
 .whatsapp-btn:hover { background: rgba(194, 205, 184, 0.25); }
@@ -292,6 +303,35 @@ footer small {
 }
 
 @media (max-width: 720px) {
+  main {
+    gap: 0;
+    margin-top: 0;
+  }
+
+  main > section,
+  .music-section,
+  .section,
+  .countdown,
+  .gallery,
+  .rsvp,
+  .details,
+  .vestimenta,
+  .contact-whatsapp {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+  }
+
+  .date-side.left::before,
+  .date-side.right::after {
+    display: none;
+  }
+
   body * {
     border-radius: 0 !important;
   }

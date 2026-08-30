@@ -3,50 +3,30 @@
     "id": 1,
     "nombre": "Yanela Rubio",
     "cupos": 2,
-    "qr": "X",
-    "pagos": [
-      { "nombre": "Víctor Hugo Sifuentes Ñiquin", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_VHSN.png" },
-      { "nombre": "Yessica Yanela Rubio Polo", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_YYRP.png" }
-    ]
+    "qr": "X"
   },
   "QKSPJC": {
     "id": 2,
     "nombre": "Carlos Mendoza",
     "cupos": 1,
-    "qr": "",
-    "pagos": [
-      { "nombre": "Víctor Hugo Sifuentes Ñiquin", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_VHSN.png" },
-      { "nombre": "Yessica Yanela Rubio Polo", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_YYRP.png" }
-    ]
+    "qr": ""
   },
   "X6HVFS": {
     "id": 3,
     "nombre": "Familia Gómez",
     "cupos": 4,
-    "qr": "X",
-    "pagos": [
-      { "nombre": "Víctor Hugo Sifuentes Ñiquin", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_VHSN.png" },
-      { "nombre": "Yessica Yanela Rubio Polo", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_YYRP.png" }
-    ]
+    "qr": "X"
   },
   "7Q6C6M": {
     "id": 4,
     "nombre": "Pedro Alva & Acompañante",
     "cupos": 2,
-    "qr": "",
-    "pagos": [
-      { "nombre": "Víctor Hugo Sifuentes Ñiquin", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_VHSN.png" },
-      { "nombre": "Yessica Yanela Rubio Polo", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_YYRP.png" }
-    ]
+    "qr": ""
   },
   "85TZEP": {
     "id": 5,
     "nombre": "Lucía Fernández",
     "cupos": 1,
-    "qr": "",
-    "pagos": [
-      { "nombre": "Víctor Hugo Sifuentes Ñiquin", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_VHSN.png" },
-      { "nombre": "Yessica Yanela Rubio Polo", "numeroCuenta": "Nro cuenta: 123456789", "cci": "CCI: 987654321", "yape": "Yape: 999888777", "qr": "assets/icons/QR_YYRP.png" }
-    ]
+    "qr": ""
   }
 }
