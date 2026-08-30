@@ -50,7 +50,7 @@ h3 { color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
 .account-info span { font-size: 0.95rem; color: var(--text-dark); opacity: 0.85; }
 .account-info strong.cci-label { font-family: inherit !important; font-size: 2em !important; font-weight: 100; }
 .payment-row { display: grid; grid-template-columns: minmax(0, 1fr) 78px; align-items: center; gap: 12px; width: 100%; }
-.payment-data { min-width: 0; padding-left: 90px; text-align: left; }
+.payment-data { min-width: 0; padding-left: 80px; text-align: left; }
 .copy-btn { width: 28px; height: 28px; border: 0; border-radius: 0; padding: 0; background: transparent; color: var(--gold); font-family: inherit !important; cursor: pointer; }
 .copy-icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5; transition: transform 0.2s ease, color 0.2s ease; }
 .copy-text { display: none !important; }
