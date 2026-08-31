@@ -208,7 +208,7 @@ async function cargarInvitado() {
 
     if (saludoInvitado) {
       saludoInvitado.textContent =
-        `${invitado.nombre} Nos hace mucha ilusión compartir este día contigo.`;
+        `${invitado.nombre}, Nos hace mucha ilusión compartir este día contigo.`;
     }
 
     nombreInvitado.value = invitado.nombre;
