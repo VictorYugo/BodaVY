@@ -218,7 +218,7 @@
   "KE9FFA": {
     "id": 37,
     "nombre": "Deiner Polo Gonzales",
-    "cupos": 1,
+    "cupos": 2,
     "qr": ""
   },
   "ABALSM": {
@@ -806,6 +806,12 @@
     "HAJHOX": {
     "id": 135,
     "nombre": "Renato Nuñez",
+    "cupos": 1,
+    "qr": "X"
+  },
+    "HAJHOA": {
+    "id": 136,
+    "nombre": "Wendy De La Cruz",
     "cupos": 1,
     "qr": "X"
   }
