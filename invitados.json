@@ -1,32 +1,806 @@
 {
-  "966VQB": {
+  "8TSW16": {
     "id": 1,
-    "nombre": "Yanela Rubio",
-    "cupos": 2,
+    "nombre": "Yessica Yanela Rubio Polo",
+    "cupos": 1,
     "qr": "X"
   },
-  "QKSPJC": {
+  "PTDUPH": {
     "id": 2,
-    "nombre": "Carlos Mendoza",
+    "nombre": "Victor Hugo Sifuentes Ñiquin",
     "cupos": 1,
-    "qr": ""
-  },
-  "X6HVFS": {
-    "id": 3,
-    "nombre": "Familia Gómez",
-    "cupos": 4,
     "qr": "X"
   },
-  "7Q6C6M": {
-    "id": 4,
-    "nombre": "Pedro Alva & Acompañante",
+  "VZJ0SY": {
+    "id": 3,
+    "nombre": "Manuel Rubio Gonzales y esposa",
     "cupos": 2,
     "qr": ""
   },
-  "85TZEP": {
+  "UNGPO0": {
+    "id": 4,
+    "nombre": "Jorge Polo y Leonila Gonzales",
+    "cupos": 2,
+    "qr": ""
+  },
+  "DUFR7R": {
     "id": 5,
-    "nombre": "Lucía Fernández",
+    "nombre": "Fiorella Rubio Polo",
+    "cupos": 3,
+    "qr": "X"
+  },
+  "FTZCM3": {
+    "id": 6,
+    "nombre": "Esther Polo Gonzales",
     "cupos": 1,
     "qr": ""
+  },
+  "S5QBHH": {
+    "id": 7,
+    "nombre": "Victor Sifuentes Huaylla y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "2TTH43": {
+    "id": 8,
+    "nombre": "Tanislao Sifuentes y Graciela Huaylla",
+    "cupos": 2,
+    "qr": ""
+  },
+  "KDPG7N": {
+    "id": 9,
+    "nombre": "Alexander Rodriguez y esposa",
+    "cupos": 3,
+    "qr": ""
+  },
+  "QKL4FW": {
+    "id": 10,
+    "nombre": "Juanita Algalobos Carrasco",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "ZIL808": {
+    "id": 11,
+    "nombre": "Sonia Reyes y esposo",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "9DOU6C": {
+    "id": 12,
+    "nombre": "Luz Clarita Lopez Valverde",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "5U3OZZ": {
+    "id": 13,
+    "nombre": "Ruth Gutierrez Vera",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "KEYWT6": {
+    "id": 14,
+    "nombre": "Daniela de la Cruz",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "GALY0Y": {
+    "id": 15,
+    "nombre": "Hans Vasquez y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "YYK85F": {
+    "id": 16,
+    "nombre": "Kessia Gomez Sandoval",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "EERRN3": {
+    "id": 17,
+    "nombre": "Erlith Dominguez Morillo",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "4CLNNF": {
+    "id": 18,
+    "nombre": "Marcos Mendoza Mendoza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "FDD29O": {
+    "id": 19,
+    "nombre": "Maura Rebaza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "T5QSMP": {
+    "id": 20,
+    "nombre": "Elvis Uriol Carranza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "72VVKR": {
+    "id": 21,
+    "nombre": "Miguel Sare y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "SVA28Z": {
+    "id": 22,
+    "nombre": "Lucero Arteaga Sifuentes",
+    "cupos": 2,
+    "qr": ""
+  },
+  "XV55FG": {
+    "id": 23,
+    "nombre": "Veronica Castañeda",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "A8N2QV": {
+    "id": 24,
+    "nombre": "Anderson Zavaleta Avila",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "UX21W5": {
+    "id": 25,
+    "nombre": "Jhosep Salinas Grados",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "TTCDNC": {
+    "id": 26,
+    "nombre": "Angel Reto",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "ROKMJG": {
+    "id": 27,
+    "nombre": "Andres Tupac",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "R37FM0": {
+    "id": 28,
+    "nombre": "Nicolas Castillo",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "EIE1SW": {
+    "id": 29,
+    "nombre": "Luis Alcarraz Flores y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "JBFDEU": {
+    "id": 30,
+    "nombre": "Gonzalo Vasquez Hernandez",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "2AVWK8": {
+    "id": 31,
+    "nombre": "Pool Valle Ramos",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "F2H0LX": {
+    "id": 32,
+    "nombre": "Milagros Lavado Gomez y esposo",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "RMCPHS": {
+    "id": 33,
+    "nombre": "Kenny Balarezo Ruiz",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "A0J5PX": {
+    "id": 34,
+    "nombre": "Royer Gonzales Rubio",
+    "cupos": 1,
+    "qr": ""
+  },
+  "B8O7K3": {
+    "id": 35,
+    "nombre": "Ruth Gonzales Rubio",
+    "cupos": 1,
+    "qr": ""
+  },
+  "0Q34U2": {
+    "id": 36,
+    "nombre": "Thalia Chipana",
+    "cupos": 1,
+    "qr": ""
+  },
+  "KE9FFA": {
+    "id": 37,
+    "nombre": "Deiner Polo Gonzales",
+    "cupos": 1,
+    "qr": ""
+  },
+  "ABALSM": {
+    "id": 38,
+    "nombre": "Bonnie Guarniz Sifuentes",
+    "cupos": 7,
+    "qr": ""
+  },
+  "GRQJC1": {
+    "id": 39,
+    "nombre": "Diego Reyna Sifuentes",
+    "cupos": 1,
+    "qr": ""
+  },
+  "GOB5DO": {
+    "id": 40,
+    "nombre": "Anita Reyna Sifuentes",
+    "cupos": 7,
+    "qr": ""
+  },
+  "EM96Q5": {
+    "id": 41,
+    "nombre": "Humberto Reyes Sifuentes",
+    "cupos": 7,
+    "qr": ""
+  },
+  "S14ZCE": {
+    "id": 42,
+    "nombre": "Carmen Sifuentes Huaylla",
+    "cupos": 7,
+    "qr": ""
+  },
+  "GM24KC": {
+    "id": 43,
+    "nombre": "Maria Sifuentes y esposo",
+    "cupos": 7,
+    "qr": ""
+  },
+  "LGEPNU": {
+    "id": 44,
+    "nombre": "Yenson Guzman y Elena Sifuentes",
+    "cupos": 7,
+    "qr": ""
+  },
+  "2BLDP6": {
+    "id": 45,
+    "nombre": "Jimmy Cuba Meza y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "HRVEPQ": {
+    "id": 46,
+    "nombre": "Cliber Ruiz Meza y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "MG0ALF": {
+    "id": 47,
+    "nombre": "Carlos Alonso Ruiz Meza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "SBU2IT": {
+    "id": 48,
+    "nombre": "Yomer Ruiz Meza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "ACEFEC": {
+    "id": 49,
+    "nombre": "Nataly Ruiz Meza",
+    "cupos": 2,
+    "qr": ""
+  },
+  "13J3HA": {
+    "id": 50,
+    "nombre": "Luis Ruiz Meza",
+    "cupos": 1,
+    "qr": ""
+  },
+  "MDJ2XZ": {
+    "id": 51,
+    "nombre": "Edwin Chavez y familia",
+    "cupos": 2,
+    "qr": ""
+  },
+  "TOLQU0": {
+    "id": 52,
+    "nombre": "Manuel Lezama y familia",
+    "cupos": 3,
+    "qr": ""
+  },
+  "2SQMJP": {
+    "id": 53,
+    "nombre": "Kevin Polo Rubio",
+    "cupos": 1,
+    "qr": ""
+  },
+  "D0X4XF": {
+    "id": 54,
+    "nombre": "Lenner Polo Rubio",
+    "cupos": 1,
+    "qr": ""
+  },
+  "MH10B7": {
+    "id": 55,
+    "nombre": "Jefferson Polo Rubio y hermana",
+    "cupos": 2,
+    "qr": ""
+  },
+  "J9L5C4": {
+    "id": 56,
+    "nombre": "Sheyla Rodriguez",
+    "cupos": 9,
+    "qr": ""
+  },
+  "PNPXFD": {
+    "id": 57,
+    "nombre": "Alondra Arteaga",
+    "cupos": 1,
+    "qr": ""
+  },
+  "E6NTDQ": {
+    "id": 58,
+    "nombre": "Ivon Rodriguez",
+    "cupos": 10,
+    "qr": ""
+  },
+  "NCR2KW": {
+    "id": 59,
+    "nombre": "Paty Rodriguez",
+    "cupos": 10,
+    "qr": ""
+  },
+  "G7FWQ7": {
+    "id": 60,
+    "nombre": "Jhosep Rios Ñiquin",
+    "cupos": 10,
+    "qr": ""
+  },
+  "L2N6AH": {
+    "id": 61,
+    "nombre": "Luz Rios Ñiquin",
+    "cupos": 1,
+    "qr": ""
+  },
+  "P9RUOJ": {
+    "id": 62,
+    "nombre": "Aldo Rios Ñiquin",
+    "cupos": 1,
+    "qr": ""
+  },
+  "SKTKQE": {
+    "id": 63,
+    "nombre": "Peter Ñiquin y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "JSF8K4": {
+    "id": 64,
+    "nombre": "Robert Sifuentes y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "JGJSBF": {
+    "id": 65,
+    "nombre": "José Rodriguez Chavez",
+    "cupos": 1,
+    "qr": ""
+  },
+  "WPWLY6": {
+    "id": 66,
+    "nombre": "Karen Urtecho Contreras",
+    "cupos": 1,
+    "qr": ""
+  },
+  "ADRI3D": {
+    "id": 67,
+    "nombre": "Nancy Sifuentes",
+    "cupos": 1,
+    "qr": ""
+  },
+  "MXRMU8": {
+    "id": 68,
+    "nombre": "Angela Veneros y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "FSNS2H": {
+    "id": 69,
+    "nombre": "Nicolas Sifuentes y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "IB5XLD": {
+    "id": 70,
+    "nombre": "Elsa Rubio Salinas",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "VJDWHM": {
+    "id": 71,
+    "nombre": "Ronal Gonzales y Estela Rubio",
+    "cupos": 2,
+    "qr": ""
+  },
+  "TTL6NO": {
+    "id": 72,
+    "nombre": "Miguel Polo y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "KMB2SR": {
+    "id": 73,
+    "nombre": "Victor Lara Gonzales y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "V3Q9MH": {
+    "id": 74,
+    "nombre": "Victoriano Polo y familia",
+    "cupos": 4,
+    "qr": ""
+  },
+  "YPUWNN": {
+    "id": 75,
+    "nombre": "Máximo Polo y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "8SBXK6": {
+    "id": 76,
+    "nombre": "Roger Polo y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "O0UK8R": {
+    "id": 77,
+    "nombre": "Herman Rubio Gonzales",
+    "cupos": 1,
+    "qr": ""
+  },
+  "6H2II4": {
+    "id": 78,
+    "nombre": "Teonila González Sanchez",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "A5VNZJ": {
+    "id": 79,
+    "nombre": "Juan Rubio y familia",
+    "cupos": 2,
+    "qr": ""
+  },
+  "AZLGY3": {
+    "id": 80,
+    "nombre": "Pepe Rubio y familia",
+    "cupos": 2,
+    "qr": ""
+  },
+  "0FJKL2": {
+    "id": 81,
+    "nombre": "Luis Rosales Aranda",
+    "cupos": 2,
+    "qr": ""
+  },
+  "LOF5KB": {
+    "id": 82,
+    "nombre": "Alexander Varas y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "3GJVNQ": {
+    "id": 83,
+    "nombre": "Guillermo Polo y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "JYJRJ9": {
+    "id": 84,
+    "nombre": "Omar Polo Gonzales",
+    "cupos": 1,
+    "qr": ""
+  },
+  "J4EL9N": {
+    "id": 85,
+    "nombre": "Heraldo Polo y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "A4H1YX": {
+    "id": 86,
+    "nombre": "Adrian Polo Gonzales",
+    "cupos": 1,
+    "qr": ""
+  },
+  "FOOYBC": {
+    "id": 87,
+    "nombre": "Juan Carlos Polo Gonzales",
+    "cupos": 1,
+    "qr": ""
+  },
+  "SASYGA": {
+    "id": 88,
+    "nombre": "Jimy Cernaque Ballesteros",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "JTWKJ5": {
+    "id": 89,
+    "nombre": "Marly Diestra Loyola",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "PXREY5": {
+    "id": 90,
+    "nombre": "Luis Vargas Ávila y familia",
+    "cupos": 3,
+    "qr": ""
+  },
+  "3CYIHH": {
+    "id": 91,
+    "nombre": "Eloy Vargas y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "BSHUOT": {
+    "id": 92,
+    "nombre": "Yaquelin Vargas Ávila",
+    "cupos": 1,
+    "qr": ""
+  },
+  "4F69LE": {
+    "id": 93,
+    "nombre": "Margiori Ibañez Romero",
+    "cupos": 2,
+    "qr": ""
+  },
+  "4SYQFG": {
+    "id": 94,
+    "nombre": "Alipio Ibañez y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "XEX3XD": {
+    "id": 95,
+    "nombre": "Alcalde y acompañante",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "KFW9EN": {
+    "id": 96,
+    "nombre": "Geiser Torres",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "KXURFN": {
+    "id": 97,
+    "nombre": "Jhonatan Carranza Lavado y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "4QDNUY": {
+    "id": 98,
+    "nombre": "Fanny Pereda",
+    "cupos": 17,
+    "qr": "X"
+  },
+  "5XNAE4": {
+    "id": 99,
+    "nombre": "Kari Pereda",
+    "cupos": 1,
+    "qr": ""
+  },
+  "SO6EUF": {
+    "id": 100,
+    "nombre": "Diana Sifuentes",
+    "cupos": 2,
+    "qr": ""
+  },
+  "XTM3ZF": {
+    "id": 101,
+    "nombre": "Luis Sifuentes y pareja",
+    "cupos": 2,
+    "qr": ""
+  },
+  "NB8HSE": {
+    "id": 102,
+    "nombre": "Bertha Rojas Ibañez y familia",
+    "cupos": 2,
+    "qr": ""
+  },
+  "494936": {
+    "id": 103,
+    "nombre": "Santiago Pereda y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "9LCFQF": {
+    "id": 104,
+    "nombre": "Maria Pereda Ibañez",
+    "cupos": 1,
+    "qr": ""
+  },
+  "BNUHQF": {
+    "id": 105,
+    "nombre": "Elvira Ñiquin Ibañez y esposo",
+    "cupos": 2,
+    "qr": ""
+  },
+  "49SZMO": {
+    "id": 106,
+    "nombre": "Anita Ñiquin Ibañez",
+    "cupos": 2,
+    "qr": ""
+  },
+  "B7H9MR": {
+    "id": 107,
+    "nombre": "Pilar Rodriguez Uceda",
+    "cupos": 1,
+    "qr": ""
+  },
+  "9WAE07": {
+    "id": 108,
+    "nombre": "Andres Ruiz Ibañez y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "1EP2K5": {
+    "id": 109,
+    "nombre": "Javier Leonardo",
+    "cupos": 2,
+    "qr": ""
+  },
+  "J4ZVXH": {
+    "id": 110,
+    "nombre": "Lez Leonardo y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "3DGK03": {
+    "id": 111,
+    "nombre": "Joel Polo Obispo",
+    "cupos": 1,
+    "qr": ""
+  },
+  "7REAU7": {
+    "id": 112,
+    "nombre": "Teofilo Minchola",
+    "cupos": 1,
+    "qr": ""
+  },
+  "7QOA5K": {
+    "id": 113,
+    "nombre": "Santos Minchola y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "ZD5RDG": {
+    "id": 114,
+    "nombre": "Mabel Velasquez",
+    "cupos": 1,
+    "qr": ""
+  },
+  "GUJIPR": {
+    "id": 115,
+    "nombre": "Karla Bolaños y esposo",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "PZCKPH": {
+    "id": 116,
+    "nombre": "Moises Arteaga y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "XTYR9W": {
+    "id": 117,
+    "nombre": "Pascual Gonzáles Espinoza",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "RNEUY1": {
+    "id": 118,
+    "nombre": "Alfonso Artega",
+    "cupos": 2,
+    "qr": ""
+  },
+  "13Q63D": {
+    "id": 119,
+    "nombre": "Enfermera Menocucho",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "EPHVCS": {
+    "id": 120,
+    "nombre": "Julio Rodriguez y esposa",
+    "cupos": 2,
+    "qr": ""
+  },
+  "LRYF3P": {
+    "id": 121,
+    "nombre": "Veronica Herrera Castro",
+    "cupos": 1,
+    "qr": ""
+  },
+  "DU0ZSO": {
+    "id": 122,
+    "nombre": "Mary Guzmán Garcia",
+    "cupos": 1,
+    "qr": ""
+  },
+  "J311X1": {
+    "id": 123,
+    "nombre": "Diana Guzmán García",
+    "cupos": 1,
+    "qr": ""
+  },
+  "Y6GTII": {
+    "id": 124,
+    "nombre": "Jorge Acevedo Sifuentes",
+    "cupos": 2,
+    "qr": ""
+  },
+  "R2UIUE": {
+    "id": 125,
+    "nombre": "Mirian Reyna",
+    "cupos": 1,
+    "qr": ""
+  },
+  "XGXLTJ": {
+    "id": 126,
+    "nombre": "Johana Vidal",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "HVRF5V": {
+    "id": 127,
+    "nombre": "Susana Paredes Medina",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "Y15AKJ": {
+    "id": 128,
+    "nombre": "Edith Salinas",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "FI78VL": {
+    "id": 129,
+    "nombre": "Fiorella Ibañez",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "H03AF1": {
+    "id": 130,
+    "nombre": "Arturo Diaz Urteaga y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "KWUIUD": {
+    "id": 131,
+    "nombre": "Yarithza Marin Quevedo",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "IB4QAS": {
+    "id": 132,
+    "nombre": "Eduardo Flores y esposa",
+    "cupos": 2,
+    "qr": "X"
+  },
+  "WF75U8": {
+    "id": 133,
+    "nombre": "Felix Leyton",
+    "cupos": 1,
+    "qr": "X"
+  },
+  "HAJHOO": {
+    "id": 134,
+    "nombre": "Armando Perez",
+    "cupos": 1,
+    "qr": "X"
   }
 }
