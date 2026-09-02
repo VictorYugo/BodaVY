@@ -224,7 +224,7 @@
   "ABALSM": {
     "id": 38,
     "nombre": "Bonnie Guarniz Sifuentes",
-    "cupos": 7,
+    "cupos": 1,
     "qr": ""
   },
   "GRQJC1": {
@@ -236,31 +236,31 @@
   "GOB5DO": {
     "id": 40,
     "nombre": "Anita Reyna Sifuentes",
-    "cupos": 7,
+    "cupos": 1,
     "qr": ""
   },
   "EM96Q5": {
     "id": 41,
     "nombre": "Humberto Reyes Sifuentes",
-    "cupos": 7,
+    "cupos": 1,
     "qr": ""
   },
   "S14ZCE": {
     "id": 42,
     "nombre": "Carmen Sifuentes Huaylla",
-    "cupos": 7,
+    "cupos": 2,
     "qr": ""
   },
   "GM24KC": {
     "id": 43,
     "nombre": "Maria Sifuentes y esposo",
-    "cupos": 7,
+    "cupos": 2,
     "qr": ""
   },
   "LGEPNU": {
     "id": 44,
     "nombre": "Yenson Guzman y Elena Sifuentes",
-    "cupos": 7,
+    "cupos": 2,
     "qr": ""
   },
   "2BLDP6": {
@@ -332,7 +332,7 @@
   "J9L5C4": {
     "id": 56,
     "nombre": "Sheyla Rodriguez",
-    "cupos": 9,
+    "cupos": 1,
     "qr": ""
   },
   "PNPXFD": {
@@ -344,19 +344,19 @@
   "E6NTDQ": {
     "id": 58,
     "nombre": "Ivon Rodriguez",
-    "cupos": 10,
+    "cupos": 1,
     "qr": ""
   },
   "NCR2KW": {
     "id": 59,
     "nombre": "Paty Rodriguez",
-    "cupos": 10,
+    "cupos": 1,
     "qr": ""
   },
   "G7FWQ7": {
     "id": 60,
     "nombre": "Jhosep Rios Ñiquin",
-    "cupos": 10,
+    "cupos": 1,
     "qr": ""
   },
   "L2N6AH": {
@@ -584,8 +584,8 @@
   "4QDNUY": {
     "id": 98,
     "nombre": "Fanny Pereda",
-    "cupos": 17,
-    "qr": "X"
+    "cupos": 2,
+    "qr": ""
   },
   "5XNAE4": {
     "id": 99,
